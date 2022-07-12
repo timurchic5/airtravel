@@ -270,4 +270,7 @@ img{
   .featured .main {
     grid-column: span 2;
   }
+  .footer .left-menu, .right-menu {
+      flex-direction: column;
+  }
 }
