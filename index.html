@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>airtravel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <h3 class="intro">Представляем новый airtravel</h3>
+        <p>Узнать больше</p>
+      </div>
+      <div class="navbar">
+        <div>
+          <h1>airtravel</h1>
+        </div>
+        <div class="search">
+          <form>
+            <div class="input-container">
+              <input type="text" placeholder="Искать объявления" />
+            </div>
+            <div>
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </div>
+        <div class="menu">
+          <ul class="navmenu">
+            <li>
+              <a class="navlink" onclick="closeMenu()" href="#listings">Объявления</a>
+            </li>
+            <li>
+              <a class="navlink" onclick="closeMenu()" href="#featured">Рекомендуемые</a>
+            </li>
+            <li>
+              <a class="navlink" onclick="closeMenu()" href="#popular">Популярное</a>
+            </li>
+          </ul>
+          <div class="mobile" onclick="mobileMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <div class="sortbar">
+        <div>
+          <i class="fa-solid fa-house-chimney"></i>
+          <p>Дома</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-snowflake"></i>
+          <p>Арктика</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-rocket"></i>
+          <p>Космос</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-tree"></i>
+          <p>Леса</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-building"></i>
+          <p>Города</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-campground"></i>
+          <p>Кемпинги</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-umbrella-beach"></i>
+          <p>Пляжы</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-volleyball"></i>
+          <p>Развлечения</p>
+        </div>
+      </div>
+      <div id="listings" class="listings">
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1577495508326-19a1b3cf65b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuc2lvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60" alt="Старый особняк">
+              <div>
+                  <div class="card-title">
+                      <h4>Дубна</h4>
+                      <p>
+                          5.0<i class="fa-solid fa-star"></i>
+                      </p>
+                  </div>
+                  <p><span class="gray">Аренда от собственника</span></p>
+                  <p><span class="gray">Июнь 1-7</span></p>
+                  <p class="price">50 000 ₽ за ночь</p>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1521543387600-c745f8e83d77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG1hbnNpb258ZW58MHx8MHx8&auto=format&fit=crop&w=1100&q=60" alt="Старый особняк">
+              <div>
+                  <div class="card-title">
+                      <h4>Дубна</h4>
+                      <p>
+                          5.0<i class="fa-solid fa-star"></i>
+                      </p>
+                  </div>
+                  <p><span class="gray">Аренда от собственника</span></p>
+                  <p><span class="gray">Июнь 1-7</span></p>
+                  <p class="price">50 000 ₽ за ночь</p>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1608058204446-1cf0f7d11d38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Хата торговца неграми">
+              <div>
+                  <div class="card-title">
+                      <h4>Дубна</h4>
+                      <p>
+                          5.0<i class="fa-solid fa-star"></i>
+                      </p>
+                  </div>
+                  <p><span class="gray">Аренда от собственника</span></p>
+                  <p><span class="gray">Июнь 1-7</span></p>
+                  <p class="price">50 000 ₽ за ночь</p>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Старый особняк">
+              <div>
+                  <div class="card-title">
+                      <h4>Дубна</h4>
+                      <p>
+                          5.0<i class="fa-solid fa-star"></i>
+                      </p>
+                  </div>
+                  <p><span class="gray">Аренда от собственника</span></p>
+                  <p><span class="gray">Июнь 1-7</span></p>
+                  <p class="price">50 000 ₽ за ночь</p>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1566908829550-e6551b00979b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFuc2lvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1100&q=60" alt="Хата где живут бомжи">
+              <div>
+                  <div class="card-title">
+                      <h4>Дубна</h4>
+                      <p>
+                          5.0<i class="fa-solid fa-star"></i>
+                      </p>
+                  </div>
+                  <p><span class="gray">Аренда от собственника</span></p>
+                  <p><span class="gray">Июнь 1-7</span></p>
+                  <p class="price">50 000 ₽ за ночь</p>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80" alt="Хата моей собаки">
+              <div>
+                  <div class="card-title">
+                      <h4>Дубна</h4>
+                      <p>
+                          5.0<i class="fa-solid fa-star"></i>
+                      </p>
+                  </div>
+                  <p><span class="gray">Аренда от собственника</span></p>
+                  <p><span class="gray">Июнь 1-7</span></p>
+                  <p class="price">50 000 ₽ за ночь</p>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1583765748076-cac46b8c98c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="Хата мэра">
+              <div>
+                  <div class="card-title">
+                      <h4>Дубна</h4>
+                      <p>
+                          5.0<i class="fa-solid fa-star"></i>
+                      </p>
+                  </div>
+                  <p><span class="gray">Аренда от собственника</span></p>
+                  <p><span class="gray">Июнь 1-7</span></p>
+                  <p class="price">50 000 ₽ за ночь</p>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Вилла">
+              <div>
+                  <div class="card-title">
+                      <h4>Дубна</h4>
+                      <p>
+                          5.0<i class="fa-solid fa-star"></i>
+                      </p>
+                  </div>
+                  <p><span class="gray">Аренда от собственника</span></p>
+                  <p><span class="gray">Июнь 1-7</span></p>
+                  <p class="price">50 000 ₽ за ночь</p>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://i.ytimg.com/vi/JOhAhcnR9Gc/maxresdefault.jpg" alt="Вилла">
+              <div>
+                  <div class="card-title">
+                      <h4>Дубна</h4>
+                      <p>
+                          5.0<i class="fa-solid fa-star"></i>
+                      </p>
+                  </div>
+                  <p><span class="gray">Аренда от собственника</span></p>
+                  <p><span class="gray">Июнь 1-7</span></p>
+                  <p class="price">50 000 ₽ за ночь</p>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Вилла">
+              <div>
+                  <div class="card-title">
+                      <h4>Дубна</h4>
+                      <p>
+                          5.0<i class="fa-solid fa-star"></i>
+                      </p>
+                  </div>
+                  <p><span class="gray">Аренда от собственника</span></p>
+                  <p><span class="gray">Июнь 1-7</span></p>
+                  <p class="price">50 000 ₽ за ночь</p>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://i.pinimg.com/originals/00/7c/a3/007ca316a28f72b11a7e01331d441b77.jpg" alt="Вилла">
+              <div>
+                  <div class="card-title">
+                      <h4>Дубна</h4>
+                      <p>
+                          5.0<i class="fa-solid fa-star"></i>
+                      </p>
+                  </div>
+                  <p><span class="gray">Аренда от собственника</span></p>
+                  <p><span class="gray">Июнь 1-7</span></p>
+                  <p class="price">50 000 ₽ за ночь</p>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://mapio.net/images-p/92416529.jpg" alt="Антуражный коливинг в кантрисайде">
+              <div>
+                  <div class="card-title">
+                      <h4>Дубна</h4>
+                      <p>
+                          5.0<i class="fa-solid fa-star"></i>
+                      </p>
+                  </div>
+                  <p><span class="gray">Аренда от собственника</span></p>
+                  <p><span class="gray">Июнь 1-7</span></p>
+                  <p class="price">50 000 ₽ за ночь</p>
+              </div>
+          </div>
+      </div>
+      <div id="featured"class="featured">
+        <div class="title"><h1>Рекомендуемые</h1></div>
+        <div class="featured-wrapper">
+          <div class="main">
+            <img src="https://i.ytimg.com/vi/JOhAhcnR9Gc/maxresdefault.jpg" alt="Лучшее предложение сезона!!!111!!">
+          </div>
+          <div>
+            <img src="https://mapio.net/images-p/92416529.jpg" alt="Лучшее предложение сезона!!!111!!">
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Лучшее предложение сезона!!!111!!">
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1583765748076-cac46b8c98c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="Лучшее предложение сезона!!!111!!">
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Лучшее предложение сезона!!!111!!">
+          </div>
+        </div>
+      </div>
+      <div id="popular" class="featured">
+        <div class="title">
+          <h1>Популярное</h1>
+        </div>
+        <div class="featured-wrapper">
+          <div >
+            <img src="https://i.ytimg.com/vi/JOhAhcnR9Gc/maxresdefault.jpg" alt="Лучшее предложение сезона!!!111!!">
+          </div>
+          <div>
+            <img src="https://mapio.net/images-p/92416529.jpg" alt="Лучшее предложение сезона!!!111!!">
+          </div>
+          <div class="main">
+            <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Лучшее предложение сезона!!!111!!">
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1583765748076-cac46b8c98c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="Лучшее предложение сезона!!!111!!">
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Лучшее предложение сезона!!!111!!">
+          </div>
+        </div>
+        
+      </div>
+      <div class="center">
+        <a href="">
+          <i class="fa-solid fa-chevron-up"></i>
+
+        </a>
+      </div>
+      <div class="footer">
+        <ul class="left-menu">
+          <li>
+            airtravel
+          </li>
+          <li>
+            О компании
+          </li>
+          <li>
+            Направления
+          </li>
+          <li>
+            Правила
+          </li>
+        </ul>
+        <ul class="right-menu">
+          <li>
+            Поддержка
+          </li>
+          <li>
+            Контакты
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const menuBtn = document.querySelector(".mobile")
+      const navMenu = document.querySelector(".navmenu")
+      
+
+      const mobileMenu = () => {
+        menuBtn.classList.toggle("active")
+        navMenu.classList.toggle("active")
+        
+      }
+
+      const closeMenu = () => {
+        navMenu.classList.toggle("active")
+      }
+    </script>
+  </body>
+</html>
